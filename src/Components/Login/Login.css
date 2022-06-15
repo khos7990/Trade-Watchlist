@@ -1,0 +1,25 @@
+.Login {
+    margin: 0 auto;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 30vw;
+    border: black 2px solid;
+    align-items: center;
+    box-shadow: 8px 8px 15px #141e30;
+    justify-content: center;
+
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    margin: 20px;
+
+}
+

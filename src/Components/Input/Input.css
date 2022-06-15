@@ -1,0 +1,7 @@
+.Pair {
+    background-color: rgb(43, 62, 146);
+    border-radius: 10px;
+    box-sizing: content-box;
+    box-shadow: black 5px 5px 10px;
+    font-size: large;
+}

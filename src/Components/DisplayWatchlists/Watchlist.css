@@ -1,0 +1,25 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    width: 70%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+  }
+  
+  th {
+    background-color: rgba(23, 41, 51, 0.274);
+  }
+  
+  td {
+    background-color: rgb(32, 33, 85);
+  }
+  
