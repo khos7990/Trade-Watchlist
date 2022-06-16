@@ -51,5 +51,10 @@
   "devDependencies": {
     "postcss-flexbugs-fixes": "^5.0.2"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.5"
+  }
 }
