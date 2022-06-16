@@ -1,4 +1,5 @@
 import  { Component } from 'react'
+import Button from '@material-ui/core/Button';
 import "./Logout.css"
 
 
@@ -14,7 +15,7 @@ export default class Logout extends Component {
   render() {
     return (
       <div className='logoutBtn'>
-      <button onClick={this.handleLogout}>Logout</button>
+      <Button type='submit' variant='contained' color='secondary' onClick={this.handleLogout}>Logout</Button>
     
     </div>
     )

@@ -8,7 +8,8 @@ module.exports = {
 
 async function create(req,res) {
     try {
-        await Watchlist.create({pairs: req.body.pairs, user: req.user._id})
+        console.log(req.body)
+        await Watchlist.create({Name: req.body.Name, pairs: req.body.pairs, user: req.user._id})
 
         res.status(200).json("ok added to DB")
     } catch (err) {

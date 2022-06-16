@@ -1,8 +1,8 @@
 
 import { Component } from "react";
 import './newChart.css';
+import {CrosshairPlugin,Interpolate} from 'chartjs-plugin-crosshair';
 import {Link} from 'react-router-dom';
-import moment from 'moment';
 import {
   Chart as ChartJS,
   LinearScale,
@@ -12,6 +12,7 @@ import {
   Tooltip,
   Legend,
   LineElement,
+  Interaction,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
@@ -24,6 +25,9 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+ChartJS.register(CrosshairPlugin);
+Interaction.modes.interpolate = Interpolate
 
 
 
@@ -39,39 +43,74 @@ export default class NewChart extends Component {
         options : {
             responsive: true,
             plugins: {
+              tooltip: {
+                mode: 'interpolate',
+                intersect: false
+              },
+              crosshair: {
+                line: {
+                  color: '#ffffff',
+                  width: 1
+                },
+                sync: {
+                  enabled: true,
+                  group: 1,
+                  suppressTooltips: false
+                },
+                zoom: {
+                  enabled: true,
+                  zoomboxBackgroundColor: 'rgba(66,133,244,0.2)',
+                  zoomboxBorderColor: '#48F',
+                  zoomButtonText: 'Reset Zoom',
+                  zoomButtonClass: 'reset-zoom',
+                },   callbacks: {
+                  beforeZoom: () => function(start, end) {                  
+                    return true;
+                  },
+                  afterZoom: () => function(start, end) {                  
+                  }
+              },
                 legend: {
                     position: "top",
                 },
                 title: {
                     display: true,
                     text: this.props.symbol,
-                },
-            },
-        },
+                }
+            }
+        }
+
+      }, 
+
         data : {
             labels : [],
             datasets: [
                 {
-                    label: "Closed Price",
+                    label: "Closed Price(USD)",
                     data: [],
                     borderColor: "rgb(100, 183, 255)",
                     backgroundColor: "rgba(100, 183, 255, 0.5)",
               },  {
-                label: 'Price High',
+                label: 'Price High(USD)',
                 data: [],
                 borderColor: 'rgb(60, 179, 113)',
                 backgroundColor: 'rgba(60, 179, 113, 0.5)',
+                
               }, {
-                label: 'Price Low',
+                label: 'Price Low(USD)',
                 data: [],
                 borderColor: 'rgb(106, 90, 205)',
                 backgroundColor: 'rgba(106, 90, 205, 0.5)',
               }
-            ],
+            ]
         }
 
 
     }
+
+
+
+
     handleChange = (e) => {
         this.setState({[e.target.name]: e.target.value })
       }
@@ -124,9 +163,9 @@ export default class NewChart extends Component {
         } 
     return (
         <div className="chart">
-        <button onClick={this.handleClick}>Show Graph</button>
-        <Link className="backBtn" to='/'>Go Back</Link>
-        <Line height='300' width='674' options={this.state.options} data={this.state.data}  />
+        <h3>{this.props.symbol}</h3>
+        <Link className="backBtn" to='/watchlist'>Go Back</Link>
+        <Line height='250' width='674' options={this.state.options} data={this.state.data}  />
 
         </div>
         );

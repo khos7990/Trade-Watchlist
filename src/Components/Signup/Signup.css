@@ -8,7 +8,6 @@ form {
     flex-direction: column;
     width: 60vw;
     height: 30vw;
-    border: black 2px solid;
     border-radius: 50px;
     align-items: center;
     box-shadow: 8px 8px 15px #141e30;

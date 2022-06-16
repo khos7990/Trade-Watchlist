@@ -1,5 +1,10 @@
 import { Component } from 'react'
+import { Container, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import  TextField from '@material-ui/core/TextField'
 import './Login.css'
+
 
 export default class Login extends Component {
   
@@ -36,17 +41,22 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className='Login'>Login
+        <Grid Container spacing={3}>
+        <Grid item xs={2}>
+      <div className='Login'>
 
-        <form onSubmit={this.handleSubmit}>
-            Enter Email: <input name="email" value={this.state.email} onChange={this.handleChange} type='email' placeholder='Email' required></input>
-            Enter Password: <input name="password" value={this.state.password} onChange={this.handleChange} type='password' placeholder='Password' required ></input>
-            Confirm Password: <input name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' placeholder='Confirm' required ></input>
-            <button className='LoginBtn'>Login</button>
+        <Typography variant='h2'> Login </Typography>
+
+        <form autoComplete='off' onSubmit={this.handleSubmit}>
+            Enter Email: <TextField className='loginInp' variant='outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
+            Enter Password: <TextField className='loginInp' variant='outlined' name="password" value={this.state.password} onChange={this.handleChange} type='password' label='Password' required ></TextField>
+            Confirm Password: <TextField className='loginInp' variant='outlined' name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' label='Confirm' required ></TextField>
+            <Button type='submit' variant='contained' color='primary'>Login</Button>
         </form>
-
-
       </div>
+        </Grid>
+
+      </Grid>
     )
   }
 }

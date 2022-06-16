@@ -1,5 +1,6 @@
-
 import { Component } from 'react'
+import { TextField, Typography, Grid } from '@material-ui/core'
+import Button from '@material-ui/core/Button';
 import './Signup.css'
 
 export default class Signup extends Component {
@@ -42,23 +43,23 @@ handleSubmit = async (e) => {
 
   render() {
     return (
-      <div>Signup 
-
-          <form onSubmit={this.handleSubmit}>
-            Enter Name: <input name="name" value={this.state.name} onChange={this.handleChange} placeholder='Name' required></input>
-            Enter Email: <input name="email" value={this.state.email} onChange={this.handleChange} type='email' placeholder='Email' required></input>
-            Enter Password: <input name="password" value={this.state.password} onChange={this.handleChange} type='password' placeholder='Password' required ></input>
-            Confirm Password: <input name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' placeholder='Confirm' required ></input>
-            <button>Sign Up</button>
+      <Grid Container spacing={3}>
+      <Grid item xs={3}>
+      <div>
+         <Typography variant='h2'> Sign Up </Typography>
+          
+        <form autoComplete='off' onSubmit={this.handleSubmit}>
+            Enter Name: <TextField className='text' variant= 'outlined' name="name" value={this.state.name} onChange={this.handleChange} label='Name' required></TextField>
+            Enter Email: <TextField variant= 'outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
+            Enter Password: <TextField variant= 'outlined' name="password" value={this.state.password} onChange={this.handleChange} type='password' label='Password' required ></TextField>
+            Confirm Password: <TextField variant= 'outlined' name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' label='Confirm' required ></TextField>
+            <Button type='submit' variant='contained' color='primary'>Sign Up</Button>
 
 
           </form>
-
-
-
-
-
-      </div>
+       </div>
+       </Grid>
+        </Grid>
     )
   }
 }

@@ -8,7 +8,6 @@ const User = require('./User');
 
 
 const watchListSchema = new Schema({
-    Name: String,
     pairs: Array,
     user: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}]
 })

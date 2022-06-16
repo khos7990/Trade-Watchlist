@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bcrypt": "^5.0.1",
     "chart.js": "^3.8.0",
+    "chartjs-plugin-crosshair": "^1.2.0",
     "dotenv": "^16.0.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.6",

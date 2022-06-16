@@ -1,3 +1,5 @@
 .logoutBtn {
-    text-align: left;
+   position: absolute;
+   top: 20px;
+   left: 20px;  
 }
