@@ -1,20 +1,17 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Sora:wght@100;200;300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Sora:wght@100;200;300;400;500&display=swap");
 
 body {
   margin-top: 60px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right,#000000, #434343);
-  color: rgb(161, 114, 248)
+  background: linear-gradient(to right, #000000, #434343);
+  color: rgb(161, 114, 248);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 .Login {
   display: flex;
@@ -25,7 +22,6 @@ a {
   font-size: 20px;
   color: #dd7711;
 }
-
 
 .loginInp {
   color: white !important;

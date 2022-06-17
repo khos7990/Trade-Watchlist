@@ -1,8 +1,8 @@
 .app-container {
-    display: flex;
-    justify-content: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+}
+
 .TH {
   font-size: 30px;
   font-weight: bolder;

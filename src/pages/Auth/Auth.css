@@ -1,9 +1,7 @@
 .authPage {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    flex-direction: column;
- 
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
 }
-

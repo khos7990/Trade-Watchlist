@@ -1,16 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const User = require('./User');
-
-
-
-
-
+const User = require("./User");
 
 const watchListSchema = new Schema({
-    pairs: Array,
-    user: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}]
-})
+  pairs: Array,
+  user: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+});
 
-
-module.exports = mongoose.model('Watchlist', watchListSchema);
+module.exports = mongoose.model("Watchlist", watchListSchema);
