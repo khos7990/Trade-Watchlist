@@ -38,15 +38,21 @@ const theme = createTheme({
     }
   }, MuiTypography: {
     h4: {
-      padding: 30
+      padding: 25
     }
   }, MuiOutlinedInput: {
     input: {
       padding: 15,
+      margin: 10,
       border: '2px solid #A172F8'
 
     }
   },
+    MuiButtonBase: {
+      MuiButtonoutlined:{
+        padding: 20
+      }
+    }
 
 
   }

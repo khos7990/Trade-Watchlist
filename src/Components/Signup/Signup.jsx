@@ -44,15 +44,15 @@ handleSubmit = async (e) => {
   render() {
     return (
       <Grid Container spacing={3}>
-      <Grid item xs={3}>
+      <Grid item xs={4}>
       <div>
          <Typography variant='h2'> Sign Up </Typography>
           
         <form autoComplete='off' onSubmit={this.handleSubmit}>
-            Enter Name: <TextField className='text' variant= 'outlined' name="name" value={this.state.name} onChange={this.handleChange} label='Name' required></TextField>
-            Enter Email: <TextField variant= 'outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
-            Enter Password: <TextField variant= 'outlined' name="password" value={this.state.password} onChange={this.handleChange} type='password' label='Password' required ></TextField>
-            Confirm Password: <TextField variant= 'outlined' name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' label='Confirm' required ></TextField>
+            <TextField className='text' variant= 'outlined' name="name" value={this.state.name} onChange={this.handleChange} label='Name' required></TextField>
+            <TextField variant= 'outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
+             <TextField variant= 'outlined' name="password" value={this.state.password} onChange={this.handleChange} type='password' label='Password' required ></TextField>
+             <TextField variant= 'outlined' name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' label='Confirm' required ></TextField>
             <Button type='submit' variant='contained' color='primary'>Sign Up</Button>
 
 

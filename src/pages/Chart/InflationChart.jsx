@@ -1,6 +1,5 @@
 
 import { Component } from "react";
-import './newChart.css';
 import {CrosshairPlugin,Interpolate} from 'chartjs-plugin-crosshair';
 import {Link} from 'react-router-dom';
 import {
@@ -119,14 +118,15 @@ export default class NewChart extends Component {
         this.setState({data: chartdata})
     }
         
- 
+    componentDidMount(){
+      this.handleNews()
+    }
    
 
     render() {
     return (
         <div>
-        <Button type="submit" variant="contained" color='primary' onClick={this.handleNews}>Click Me</Button>
-        <Link to={'/'}>Go Back</Link>
+        <Link className="backBtn" to={'/'}>Go Back</Link>
         <h3>{'U.S Inflation Chart'}</h3>
         <Line height='250' width='674' options={this.state.options} data={this.state.data}  />
 

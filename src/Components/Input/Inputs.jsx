@@ -14,7 +14,8 @@ export default function Inputs(props) {
     <div className='whatever'>
 
    
-        Trading Pair<TextField variant='outlined' className='Pair' name="pair" value={props.name} onChange={props.onChange}></TextField>
+       <TextField variant='outlined' className='Pair' name="pair" value={props.name} onChange={props.onChange} autoComplete='off' label='Enter a TradingPair'></TextField>
+        <br/>
         <Button type='submit' variant='outlined' color='inherit' onClick={props.onClick}> Submit</Button>
 
   </div>

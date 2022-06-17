@@ -22,6 +22,7 @@ code {
 }
 
 a {
+  font-size: 20px;
   color: #dd7711;
 }
 
@@ -32,4 +33,14 @@ a {
 
 .whatever {
   padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.backBtn {
+  position: absolute;
+  left: 35px;
+}
+
+.charttitle {
+  color: #dd7711;
 }

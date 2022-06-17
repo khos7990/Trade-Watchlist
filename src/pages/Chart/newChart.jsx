@@ -1,6 +1,5 @@
 
 import { Component } from "react";
-import './newChart.css';
 import {CrosshairPlugin,Interpolate} from 'chartjs-plugin-crosshair';
 import {Link} from 'react-router-dom';
 import {
@@ -163,7 +162,7 @@ export default class NewChart extends Component {
         } 
     return (
         <div className="chart">
-        <h3>{this.props.symbol}</h3>
+        <h1 className="charttitle">{this.props.symbol}</h1>
         <Link className="backBtn" to='/'>Go Back</Link>
         <Line height='250' width='674' options={this.state.options} data={this.state.data}  />
 
