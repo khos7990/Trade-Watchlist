@@ -46,9 +46,7 @@ const theme = createTheme({
       border: '2px solid #A172F8'
 
     }
-  }, MuiTableContainer: {
-    
-  }
+  },
 
 
   }

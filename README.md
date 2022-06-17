@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Welcome To Traders-Watch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This app was designed for traders or financial enthusiasts who like to keep their eyes on the market!!
 
-## Available Scripts
+## Description: 
+### With this app, users can sign up and login using token based authentication. When logged in, users are able to search for their most interested pairs, including currencies, stocks, crypto, commodities etc.. User's have the ability to save, and delete pairs according to their interests. When searching for an asset, user's are able to view a chart to have insight of how the assest is performing. The chart provides the highest price, lowest price, and closed price for that specific day. The chart has history of the performance of the assest from the last 10 days.
 
-In the project directory, you can run:
+## Technologies Used:
+- JSX
+- React
+- CSS
+- Material UI
+- MongoDB
+- Mongoose
+- Express-NodeJs
+- Heroku
+- Alpha Vantage API
+- Chart JS
 
-### `npm start`
+## Getting Started:
+### Heroku Link: https://traders-watch.herokuapp.com/
+### Trello Board: https://trello.com/b/YwxjUPAZ/traders-alert
+### ERD: https://lucid.app/lucidchart/fa00c543-c236-4e3d-9d6b-69d97410d5da/edit?page=0_0&invitationId=inv_5219e4d9-262e-4116-95ca-a1b5789753bf#
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Next Steps:
+- AAU I want to be able to create different watchlists for different assets
+- AAU I would want to know the current price
+- AAU I want to be able to create alerts for when price reaches a specific target
+- AAU I would want examples of different assets on display
+- AAU if there was any signup or login errors, I would want to know what caused this error
+- AAU I want the webpage to be responsive for smaller screens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./screenshot1.png">
+<img src="./screenshot2.png">
+<img src="./screenshot3.png">
