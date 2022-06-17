@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Sora:wght@100;200;300;400;500&display=swap');
+
 
 body {
   margin-top: 60px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right,#141e30, #243b55);
-  color: rgb(224, 188, 24)
+  background: linear-gradient(to right,#000000, #434343);
+  color: rgb(161, 114, 248)
 }
 
 code {
@@ -20,11 +22,14 @@ code {
 }
 
 a {
-  color: rgb(224, 188, 24);
-}
-
-.App {
-  height: 80vw;
+  color: #dd7711;
 }
 
 
+.loginInp {
+  color: white !important;
+}
+
+.whatever {
+  padding-bottom: 30px;
+}

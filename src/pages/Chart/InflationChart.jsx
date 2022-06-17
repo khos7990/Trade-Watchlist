@@ -126,7 +126,7 @@ export default class NewChart extends Component {
     return (
         <div>
         <Button type="submit" variant="contained" color='primary' onClick={this.handleNews}>Click Me</Button>
-        <Link to={'/watchlist'}>Go Back</Link>
+        <Link to={'/'}>Go Back</Link>
         <h3>{'U.S Inflation Chart'}</h3>
         <Line height='250' width='674' options={this.state.options} data={this.state.data}  />
 

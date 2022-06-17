@@ -164,7 +164,7 @@ export default class NewChart extends Component {
     return (
         <div className="chart">
         <h3>{this.props.symbol}</h3>
-        <Link className="backBtn" to='/watchlist'>Go Back</Link>
+        <Link className="backBtn" to='/'>Go Back</Link>
         <Line height='250' width='674' options={this.state.options} data={this.state.data}  />
 
         </div>

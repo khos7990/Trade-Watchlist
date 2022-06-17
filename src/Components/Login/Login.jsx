@@ -39,6 +39,8 @@ export default class Login extends Component {
   }
 
 
+
+
   render() {
     return (
         <Grid Container spacing={3}>
@@ -46,9 +48,9 @@ export default class Login extends Component {
       <div className='Login'>
 
         <Typography variant='h2'> Login </Typography>
-
+  
         <form autoComplete='off' onSubmit={this.handleSubmit}>
-            Enter Email: <TextField className='loginInp' variant='outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
+            Enter Email: <TextField  className='loginInp' variant='outlined' name="email" value={this.state.email} onChange={this.handleChange} type='email' label='Email' required></TextField>
             Enter Password: <TextField className='loginInp' variant='outlined' name="password" value={this.state.password} onChange={this.handleChange} type='password' label='Password' required ></TextField>
             Confirm Password: <TextField className='loginInp' variant='outlined' name="confirm" value={this.state.confirm} onChange={this.handleChange} type='password' label='Confirm' required ></TextField>
             <Button type='submit' variant='contained' color='primary'>Login</Button>

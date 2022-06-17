@@ -2,6 +2,7 @@ import { Component } from 'react'
 import {Route, Routes} from 'react-router-dom'
 import { Typography } from '@material-ui/core'
 
+
 import './App.css';
 
 import Auth from './pages/Auth/Auth';
@@ -59,7 +60,7 @@ export default class App extends Component {
       <main className='App'>
       {this.state.user ?  
         <Routes>
-        <Route path="/watchlist" element={<Watchlist 
+        <Route path="/" element={<Watchlist 
           setUserInState={this.setUserInState}
           user={this.state.user}
           handleClickForChart={this.handleClickForChart}
