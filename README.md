@@ -3,7 +3,7 @@
 ## This app was designed for traders or financial enthusiasts who like to keep their eyes on the market!!
 
 ## Description: 
-### With this app, users can sign up and login using token based authentication. When logged in, users are able to search for their most interested pairs, including currencies, stocks, crypto, commodities etc.. User's have the ability to save, and delete pairs according to their interests. When searching for an asset, user's are able to view a chart to have insight of how the assest is performing. The chart provides the highest price, lowest price, and closed price for that specific day. The chart has history of the performance of the assest from the last 10 days.
+### With this app, users can sign up and login using token based authentication. When logged in, users are able to search for their most interested entities, including currencies, stocks, crypto, commodities etc.. User's have the ability to save, and delete entities according to their interests. When searching for an entity, user's are able to view a chart to have insight of how the entity is performing. The chart provides the highest price, lowest price, and closed price for that specific day. The chart has history of the performance of the entity from the last 10 days.
 
 ## Technologies Used:
 - JSX
